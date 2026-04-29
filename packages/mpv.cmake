@@ -12,8 +12,8 @@ ExternalProject_Add(mpv
         shaderc
         libplacebo
         spirv-cross
-    GIT_REPOSITORY https://github.com/Samuel-Bowden/mpv.git
-    GIT_TAG ed5e395550448a37387bffbf6b0025ebc9ec3c12 # v0.40.0
+    GIT_REPOSITORY https://github.com/Sam-Bowden/mpv.git
+    GIT_TAG 3431bb9263fcdf9e0c7b4be2e067f17efe750f3a # v0.40.0
     SOURCE_DIR ${SOURCE_LOCATION}
     GIT_CLONE_FLAGS "--filter=tree:0"
     UPDATE_COMMAND ""
@@ -65,6 +65,7 @@ ExternalProject_Add_Step(mpv copy-binary
     COMMAND ${CMAKE_COMMAND} -E copy <SOURCE_DIR>/include/mpv/stream_cb.h    ${CMAKE_CURRENT_BINARY_DIR}/mpv-dev/include/mpv/stream_cb.h
     COMMAND ${CMAKE_COMMAND} -E copy <SOURCE_DIR>/include/mpv/render.h       ${CMAKE_CURRENT_BINARY_DIR}/mpv-dev/include/mpv/render.h
     COMMAND ${CMAKE_COMMAND} -E copy <SOURCE_DIR>/include/mpv/render_gl.h    ${CMAKE_CURRENT_BINARY_DIR}/mpv-dev/include/mpv/render_gl.h
+    COMMAND ${CMAKE_COMMAND} -E copy <SOURCE_DIR>/include/mpv/render_dxgi.h  ${CMAKE_CURRENT_BINARY_DIR}/mpv-dev/include/mpv/render_dxgi.h
     COMMENT "Copying mpv binaries and manual"
 )
 
