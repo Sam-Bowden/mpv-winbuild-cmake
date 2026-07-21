@@ -1,7 +1,6 @@
 ExternalProject_Add(ffmpeg
     DEPENDS
         amf-headers
-        avisynth-headers
         ${nvcodec_headers}
         bzip2
         lame

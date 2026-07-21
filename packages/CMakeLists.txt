@@ -42,7 +42,6 @@ list(APPEND ep
     libass
     libvpl
     amf-headers
-    avisynth-headers
     nvcodec-headers
     libmysofa
     aom
