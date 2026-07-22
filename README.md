@@ -157,7 +157,6 @@ to update flags which will pass on gcc, g++ and etc.
 ## Information about packages
 
 - Git/Hg
-    - ANGLE
     - FFmpeg
     - x264
     - x265 (multilib)
