@@ -18,6 +18,7 @@ ExternalProject_Add(libsrt
         -DENABLE_STATIC=OFF
         -DENABLE_SHARED=ON
         -DUSE_ENCLIB=openssl
+        -DHAVE_PTHREAD_ATFORK=OFF
         -DCMAKE_POLICY_VERSION_MINIMUM=3.5
     BUILD_COMMAND ${EXEC} ninja -C <BINARY_DIR>
     INSTALL_COMMAND ${EXEC} ninja -C <BINARY_DIR> install
