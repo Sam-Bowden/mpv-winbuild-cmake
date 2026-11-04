@@ -264,6 +264,7 @@ ExternalProject_Add(ffmpeg
         --enable-parser=flac
         --enable-parser=gsm
         --enable-parser=mpegaudio
+        --enable-parser=opus
         --enable-parser=tak
         --enable-parser=vorbis
         --enable-parser=dca
