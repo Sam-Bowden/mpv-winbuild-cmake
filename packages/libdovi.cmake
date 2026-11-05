@@ -12,7 +12,7 @@ ExternalProject_Add(libdovi
         LD_PRELOAD=
         CARGO_BUILD_TARGET_DIR=<BINARY_DIR>
         CARGO_PROFILE_RELEASE_CODEGEN_UNITS=1
-        ${cargo_lto_rustflags}
+        CARGO_PROFILE_RELEASE_LTO=thin
         cargo cinstall
         --manifest-path <SOURCE_DIR>/dolby_vision/Cargo.toml
         --prefix ${MINGW_INSTALL_PREFIX}
